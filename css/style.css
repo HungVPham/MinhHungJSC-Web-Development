@@ -289,4 +289,18 @@ small{
     color: #555;
 }
 
+/* business partners CSS */
+.partners{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+}
+
 
