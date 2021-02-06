@@ -351,6 +351,11 @@ small{
     list-style-type: none;
 }
 
+/*placeholder texts for visit/current user counts footer column*/
+.footer-col-3 ul{
+    color: #000;
+}
+
 .app-logo{
     margin-top: 20px;
 }
