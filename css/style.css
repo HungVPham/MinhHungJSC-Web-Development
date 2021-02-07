@@ -10,7 +10,7 @@ body{
     font-size: 130%;
 }
 
-/* header CSS */
+/*---header CSS---*/
 #company-logo{
     width: 125px;
 }
@@ -148,7 +148,7 @@ p{
     cursor: pointer;
 }
 
-/* featured categories CSS */
+/*---featured categories CSS---*/
 
 .categories{
     margin: 70px 0;
@@ -222,7 +222,7 @@ h4{
     transform: translateY(-5px);
 }
 
-/* exclusive offer CSS */
+/*---exclusive offer CSS---*/
 .offer{
     background: radial-gradient(#fff, #ff8b8b);
     margin-top: 80px;
@@ -237,7 +237,7 @@ small{
     color: #555;
 }
 
-/* news and events CSS */
+/*---news and events CSS---*/
 .stories{
     padding-top: 100px;
 }
@@ -289,7 +289,7 @@ small{
     color: #555;
 }
 
-/* business partners CSS */
+/*---business partners CSS---*/
 
 .col-5{
     margin: 75px auto;
@@ -306,7 +306,7 @@ small{
     filter: grayscale(0%);
 }
 
-/* footer */
+/*---footer---*/
 .footer{
     background: #000;
     color: #8a8a8a;
@@ -373,4 +373,50 @@ small{
 
 .copyright{
     text-align: center;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*---media query for menu---*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;        
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    #company-logo{
+        width: 100px;
+    }
+}
+
+/*---media query for less than 600 screen size---*/
+@media only screen and (max-width: 600px){
+    .row{   
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
 }

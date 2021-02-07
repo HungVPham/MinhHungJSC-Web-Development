@@ -17,7 +17,7 @@
                 <img id="company-logo" src="images_1/logo.png" alt="logo công ty">
             </div>
             <nav>
-                <ul>   
+                <ul id="MenuItems">   
                     <li><a href="">Trang Chủ</a></li>
                     <li><a href="">Giới Thiệu</a></li>
                     <li><a href="">Sản Phẩm</a></li>
@@ -26,6 +26,8 @@
                 </ul>
             </nav>
             <img src="images/cart.png" width="30px" height="30px" alt="biệu tượng giỏ hàng">
+            <img src="images/menu.png" class="menu-icon" alt="biệu tượng menu" 
+            onclick="menutoggle()">
         </div>
         <div class="row">
             <div class="col-2">
@@ -342,5 +344,22 @@
             <p class="copyright">2021 &#169; MINH HUNG JSC. ALL RIGHT RESERVED</p>
     </div>
 </div>
+<!--js for toggle menu-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
 </body>
 </html>
