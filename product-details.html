@@ -33,7 +33,21 @@
 <div class="small-container single-product">
     <div class="row">
         <div class="col-2">
-            <img src="images_1/product/mayKhoanpin_maxpro.png" width="100%" alt="hình ảnh sản phẩm">
+            <img src="images_1/product/mayKhoanpin_maxpro.png" id="ProductImg" width="100%" alt="hình ảnh sản phẩm">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images_1/product/mayKhoanpin_maxpro.png" class="small-img" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="images_1/product/mayKhoanpin_maxpro(2).png" class="small-img" width="100%">
+                </div>
+                <div class="small-img-col"> 
+                    <img src="images_1/product/mayKhoanpin_maxpro(3).png" class="small-img" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="images_1/product/mayKhoanpin_maxpro(4).png" class="small-img" width="100%">
+                </div>
+            </div>
         </div>
         <div class="col-2"> 
             <p>Sản Phẩm / Dụng Cụ Điện MaxPro / Máy Khoan Pin</p>
@@ -41,11 +55,20 @@
             <h4>Giá Liên Hệ</h4>
             Số Lượng Mua: <input type="number" value="1">
             <a href="" class="btn">Thêm Vào Giỏ</a>
-            <h3>Thông Tin Sản Phẩm</h3>
+            <h3>Thông Tin Sản Phẩm <i class="fa fa-indent"></i></h3>
+            <br>
             <p>Sử dụng viên pin 18V, 1.5Ah cùng với lực mô-men xoắn cực đại lên đến 45N.m, giúp máy bắt vít lên gỗ hay thép một cách nhanh chóng, đường khoan chuẩn xác với thiết kế gọn nhẹ chỉ nặng 1.6Kg.</p>
         </div>
     </div>
 </div>
+<!------Title------->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Sản Phẩm Tương Tự</h2>
+        <p>Xem Thêm</p>
+    </div>
+</div>
+<!------Products------->
 <div class="small-container">
     <div class="row">
         <div class="col-4">
@@ -155,6 +178,28 @@
                 MenuItems.style.maxHeight = "0px";
             }
     }
+</script>
+<!--js for product gallery-->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src
+    }    
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src
+    }    
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src
+    }    
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src
+    }    
 </script>
 </body>
 </html>

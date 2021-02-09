@@ -452,6 +452,20 @@ select:focus{
     outline: none;
 }
 
+.single-product .fa{
+    color: #cb1c22;
+    margin-left: 10px;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
 
 
 /*---media query for menu---*/
