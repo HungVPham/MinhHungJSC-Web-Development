@@ -231,6 +231,7 @@ h4{
 .col-2 .offer-img{
     opacity: 150%;
     padding: 50px;
+    width: 100%;
 }
 
 small{
@@ -299,11 +300,11 @@ small{
 .col-5 img{
     width: 100%;
     cursor: pointer;
-    filter: grayscale(100%);
+    filter: opacity(50%);
 }
 
 .col-5 img:hover{
-    filter: grayscale(0%);
+    filter: opacity(100%)
 }
 
 /*---footer---*/
