@@ -13,6 +13,7 @@ body{
 /*---header CSS---*/
 #company-logo{
     width: 125px;
+    cursor: pointer;
 }
 
 .navbar{
@@ -341,6 +342,7 @@ small{
 .footer-col-2 img{
     width: 180px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .footer-col-3, .footer-col-4{
@@ -363,6 +365,7 @@ small{
 
 .app-logo img{
     width: 140px;
+    cursor: pointer;
 }
 
 .footer hr{
