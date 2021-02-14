@@ -40,11 +40,11 @@ nav ul li{
 
 a{
     text-decoration: none;
-    color: #555;
+    color: #000;
 }
 
 p{
-    color:#555;
+    color:#000;
 }
 
 .container{
@@ -95,7 +95,7 @@ p{
 }
 
 .header{
-    background: radial-gradient(#fff, #ff8b8b);
+    background: radial-gradient(#fff, #cb1c22);
 }
 
 .header .row{
@@ -159,11 +159,53 @@ p{
     flex-basis: 30%;
     min-width: 250px;
     margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
 }
 
 .col-3 img{
     width: 100%;
+    display: block;
+
 }
+
+.image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(202, 28, 33, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image_overlay-blur{
+    backdrop-filter: blur(1px);
+}
+
+.image_overlay > *{
+    transform: translateY(20px);
+    transition:  transform 0.25s;
+}
+
+.image_overlay:hover{
+    opacity: 1;
+}
+
+.image_overlay:hover > *{
+    transform: translateY(0)
+}
+
+.image_title{
+    font-size: 2em;
+}
+
 
 .small-container{
     max-width: 1080px;
@@ -225,7 +267,7 @@ h4{
 
 /*---exclusive offer CSS---*/
 .offer{
-    background: radial-gradient(#fff, #ff8b8b);
+    background: radial-gradient(#fff, #cb1c22);
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -257,6 +299,7 @@ small{
     width: 50px;
     margin-top: 20px;
     border-radius: 50%;
+    display: inline-block;
 }
 
 .stories .col-3:hover{
@@ -280,7 +323,7 @@ small{
     height: 350px;
 }
 
-.stories .subdiv{
+.stories .subdiv{   
     width: 90%;
     position: absolute;
     bottom: 5%;
@@ -301,11 +344,12 @@ small{
 .col-5 img{
     width: 100%;
     cursor: pointer;
-    filter: opacity(50%);
+    opacity: 0.5;
+    transition: opacity 0.25s;
 }
 
 .col-5 img:hover{
-    filter: opacity(100%)
+    opacity: 1;
 }
 
 /*---footer---*/
@@ -383,6 +427,10 @@ small{
     width: 28px;
     margin-left: 20px;
     display: none;
+}
+
+.footer a{
+    color: #b5b5b5;
 }
 
 /*---all products page---*/
@@ -472,6 +520,7 @@ select:focus{
 }
 
 
+
 /*---media query for menu---*/
 
 @media only screen and (max-width: 800px){
@@ -520,6 +569,9 @@ select:focus{
     .single-product h1{
         font-size: 26px;
         line-height: 32px;
+    }
+    .image_overlay{
+        opacity: 1;
     }
 }
 
