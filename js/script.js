@@ -1,3 +1,4 @@
+//*Js for image carousel on index.html
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages =  document.querySelectorAll('.carousel-slide img');
 
@@ -36,8 +37,9 @@ carouselSlide.addEventListener('transitionend', () => {
         carouselSlide.style.transition = "none";
         counter = carouselImages.length - counter; 
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    }
+    }   
 });
+
 
 
 
