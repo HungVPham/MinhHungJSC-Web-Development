@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tin Tức - Sự Kiện | Minh Hưng JSC</title>
-    <link rel = "icon" href="images_1/logo.png" type="image/x-icon"> 
+    <title>Giới Thiệu | Minh Hưng JSC</title>
+    <link rel = "icon" href="images/logo.png" type="image/x-icon"> 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/197ff1d829.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .col-2 .tab{
+            margin-bottom: ; <!--remember to change-->
+        }
+    </style>
 </head> 
 <body>
 <!------header------->
     <div class="container">
         <div class="navbar">
             <div class="logo"> 
-                <a href="index.html"><img id="company-logo" src="images_1/logo.png" alt="logo công ty"></a> 
+                <a href="index.html"><img id="company-logo" src="images/logo.png" alt="logo công ty"></a> 
             </div>
             <nav>
                 <ul id="MenuItems">   
                     <li><a href="index.html">Trang Chủ</a></li>
                     <li><a href="about.html">Giới Thiệu</a></li>
                     <li><a href="products.html">Sản Phẩm</a></li>
-                    <li><a href="news_events.html">Tin Tức - Sự Kiện</a></li>
+                    <li><a href="news-events.html">Tin Tức - Sự Kiện</a></li>
                     <li><a href="contact.html">Liên Hệ</a></li>
                     <li><a href="account.html">Tài Khoản</a></li>
                 </ul>
@@ -32,6 +37,42 @@
             onclick="menutoggle()">
         </div>
     </div> 
+<!------about us------->
+<div class="about-page">
+    <div class="small-container">
+    <div class="row">
+        <div class="col-2">
+            <div class="tab">
+                <a href="about.html" id="titlenav" class="btn">GIỚI THIỆU</a>
+                <hr id="Separator">
+                <a href="about_founding-history.html"><button class="tablinks">Lịch Sử Hình Thành</button></a>
+                <hr id="Separator">
+                <a href="about_vision-and-mission.html"><button class="tablinks">Tầm Nhìn - Sứ Mệnh</button></a>
+                <hr id="Separator">
+                <a href="about_org-chart.html"><button class="tablinks">Sơ Đồ Tổ Chức</button></a>
+                <hr id="Separator">
+                <a href="about_dev-strat.html"><button class="tablinks">Chiến Lược Phát Triển</button></a>
+                <hr id="Separator">
+                <a href="about_biz-philosophy.html"><button class="tablinks">Triết Lý Kinh Doanh</button></a>
+                <hr id="Separator">
+                <a href="about_awards.html"><button class="tablinks">Danh Hiệu - Giải Thưởng</button></a>
+                <hr id="Separator">
+            </div>
+        </div>
+        <div class="col-2">
+                <div id="London" class="tabcontent">
+                    <div class="tabcontent-title">
+                    <h2>Sơ Đồ Tổ Chức</h2>
+                    </div>
+                    <br>
+                    <div class="tabcontent-content">
+                        <img src="" alt="sơ đồ tổ chức">
+                    </div>
+                </div>
+    </div>
+    </div>
+</div>
+</div>
 <!------footer------->
 <div class="footer">
     <div class="container">
@@ -46,7 +87,7 @@
             </div>
             <div class="footer-col-2">
                 <div class="footerLogo">    
-                    <a href="index.html"><img src="images_1/logo.png" alt="logo công ty"></a>
+                    <a href="index.html"><img src="images/logo.png" alt="logo công ty"></a>
                 </div>
                 <p>Địa chỉ: 56 Trương Phước Phan, Phường Bình Trị Đông, Quận Bình Tân, TP. HCM</p>
                 <p>Tel: (028) 62 666 333 - Fax: (028) 62 666 555</p>

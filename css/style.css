@@ -667,7 +667,64 @@ form a{
     margin-top: 80px;
     padding: 30px 0;
     margin-bottom: 80px;
-    position: relative;
+}
+
+.about-page .col-2{
+    
+}
+
+.col-2 .tab{
+    width: 100%;
+    margin-left: 70px;
+    max-width: 50%;
+}       
+
+.col-2 .tabcontent{
+    top: 0;
+    width: 100%;
+    padding: 8px;
+}
+
+.col-2 .tabcontent .tabcontent-content{
+    padding: 8px;
+    border: 3px solid #cb1c22;
+}
+
+.col-2 .tabcontent .tabcontent-title{
+    border: 1px solid;
+    background-color: #cb1c22;
+    color: #fff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.tablinks{
+    padding: 0px 10px;
+    margin: 10px 0px;   
+    border: none;
+    background: none;
+    font-family: 'Big Shoulders Display';
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+.tablinks:focus{
+    color: #cb1c22; 
+    outline: none;
+}
+
+#Separator{
+    height: 1px;
+}
+
+.tab .btn{
+    width: 100%;
+    text-align: center;
+    border-radius: 0%;
+    margin-bottom: 0px;
+    font-weight: bold;
 }
 
 .about-page h2{
@@ -683,101 +740,8 @@ form a{
 .about-page h5{
     text-align: right;
     margin: 10px;
-    margin-right: 30px
+    margin-right: 30px;
 }
-
-.col-2 .tab{
-    width: 40%;
-    overflow: hidden;
-}   
-
-.col-2 .tabcontent{
-    top: 0;
-    width: 40%;
-    display: none;
-    padding: 8px;  
-    position: absolute;
-}
-
-.col-2 .tabcontent .tabcontent-content{
-    padding: 8px;
-    border: 3px solid #cb1c22;
-}
-
-.tablinks{
-    display: block;
-    padding: 8px 20px;
-    margin: 20px 0px;   
-    border: none;
-    background: none;
-    font-family: 'Big Shoulders Display';
-    font-size: 20px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-
-.tablinks:focus{
-    color: #cb1c22; 
-    outline: none;
-}
-
-/* .content-wrap{
-    padding-bottom: 2.5rem;
-    flex: 1;
-}
-
-.about-footer{
-    bottom: 0; 
-    width: 100%;
-    position: absolute;
-    height: 2.5rem;
-}
-
-.page-container{
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column; 
-} */
-
-/* .body{
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.page-container{
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-.content-wrap{
-  flex: 1;
-} */
-
-.body{
-    height: 100%;
-    margin: 0;
-}
-
-.content-wrap{
-    min-height: 100%;
-
-}
-
-.about-footer{
-    height: 50px; 
-    margin-top: -50px;
-}
-
-.content{
-   padding: 20px;
-   padding-bottom: 50px;
-}
-
-
 /*---media query for menu---*/
 
 @media only screen and (max-width: 800px){
@@ -789,6 +753,7 @@ form a{
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
+        z-index: 999;
     }
     nav ul li{
         display: block;
@@ -832,6 +797,16 @@ form a{
     }
     .cart-info p{
         display: none;
+    }
+    .col-2 .tab{
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-bottom: 20px !important;
+    }
+    .col-2 .tabcontent{
+        position: relative; 
+        max-width: 100%;
     }
 }
 
