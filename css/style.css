@@ -669,28 +669,12 @@ form a{
     margin-bottom: 80px;
 }
 
-.about-page .col-2{
-    
-}
-
-.col-2 .tab{
-    width: 100%;
-    margin-left: 70px;
-    max-width: 50%;
-}       
-
-.col-2 .tabcontent{
-    top: 0;
-    width: 100%;
-    padding: 8px;
-}
-
-.col-2 .tabcontent .tabcontent-content{
+.about-col-2 .tabcontent .tabcontent-content{
     padding: 8px;
     border: 3px solid #cb1c22;
 }
 
-.col-2 .tabcontent .tabcontent-title{
+.about-col-2 .tabcontent .tabcontent-title{
     border: 1px solid;
     background-color: #cb1c22;
     color: #fff;
@@ -742,6 +726,90 @@ form a{
     margin: 10px;
     margin-right: 30px;
 }
+
+.about-col-1, .about-col-2{
+    min-width: 250px;
+}
+
+.about-col-1{
+    flex-basis: 30%;
+}
+
+.about-col-2{
+    flex: 1;
+    margin-left: 40px;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    padding: 10px;
+}
+
+#Separator{
+    height: 1px;    
+}
+
+#active-tab{
+    color: #cb1c22;
+    font-weight: bold;
+}
+
+.about-col-2 img{
+    width: 100%;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fff;
+    border: 1px solid #cb1c22;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #cb1c22;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+
+
 /*---media query for menu---*/
 
 @media only screen and (max-width: 800px){
@@ -798,15 +866,19 @@ form a{
     .cart-info p{
         display: none;
     }
-    .col-2 .tab{
+    .about-col-1{
         max-width: 100%;
         margin-bottom: 20px;
         margin-left: 0px;
         margin-bottom: 20px !important;
     }
-    .col-2 .tabcontent{
+    .about-col-2{
         position: relative; 
         max-width: 100%;
+        margin-left: 0px !important;
+    }
+    #about_image-slider{
+        display: none;  
     }
 }
 
