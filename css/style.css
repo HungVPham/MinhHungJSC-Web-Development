@@ -808,7 +808,176 @@ form a{
     from {opacity: .6} 
     to {opacity: 1}
 }
+/*---contact css---*/
+.contact-page{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    position: relative;
+    padding-bottom: 750px;
+}
 
+.contact-page a{
+    text-decoration: none;
+}
+
+.social a{  
+    padding: 20px;
+    color: #7b7b7b;
+    font-size: 1.1rem;
+}
+
+.social img{
+    filter: grayscale(100%);
+}
+
+#contact{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;    
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 3px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.social a:hover{
+    color: #cb1c22;
+    transition: all ease 0.3s;
+}
+
+.social img:hover{
+    filter: grayscale(0%);  
+}
+
+.contact-box{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    box-shadow: 3px 2px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.c-heading h1{
+    color: #cb1c22;
+    font-size: 2.0rem;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.c-heading p{
+    color: #333;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.c-inputs{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-inputs input{
+    width: 250px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(251, 251, 251, 0.1);
+    outline: none;
+    margin: 10px 0px; 
+    padding: 10px;
+    box-sizing: border-box;
+    color: #333;
+    display: flex;
+}
+
+.c-inputs textarea{
+    width: 250px !important;
+    height: 200px !important;
+    outline: none;
+    background-color: #b5b5b5;
+    color: #333;
+    padding: 10px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+.c-inputs button{
+    width: 200px;
+    height: 40px;
+    background-color: #cb1c22;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.2rem;
+}
+
+.c-inputs input:focus{
+    border-bottom: 1px solid #cb1c22;
+    transition: all ease 0.5s;
+}
+
+.c-inputs textarea:focus{
+    border: none;
+    border-bottom: 1px solid #cb1c22;
+    transition: all ease 0.5s;
+}
+
+.c-inputs button:active{
+    transform: scale(1.02);
+}
+
+.map{
+    filter: grayscale(0.2);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffffff;  
+}
+/*---news/events css---*/
+.page-wrapper{
+    margin-top: 80px;
+    margin-bottom: 1000px;
+}
+
+.post-slider{
+    border: 1px solid #cb1c22;
+}
+
+.post-slider .post-wrapper{
+    border: 1px dashed #cb1c22;
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.post-slider .post-wrapper .post{
+    background-color: blue;
+    display: inline-block;
+    margin: 0px 10px;
+    width: 300px;
+    height: 350px;
+}
 
 /*---media query for menu---*/
 
@@ -839,11 +1008,16 @@ form a{
     #company-logo{
         width: 100px;
     }
+    .map{
+        display: none;
+    }
 }
-
 
 /*---media query for less than 600 screen size---*/
 @media only screen and (max-width: 600px){
+    body{
+        max-width: 100%;
+    }
     .row{   
         text-align: center;
     }
@@ -880,5 +1054,22 @@ form a{
     #about_image-slider{
         display: none;  
     }
-}
 
+    .footer{
+        max-width: 100% !important;
+    }
+
+    .contact-page{
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+
+    .social{
+        display: none;
+    }
+    .contact-box{
+        width: 100%;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+    }
+}
