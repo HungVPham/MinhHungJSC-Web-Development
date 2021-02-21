@@ -955,32 +955,130 @@ form a{
 }
 /*---news/events css---*/
 .page-wrapper{
-    margin-top: 80px;
     margin-bottom: 1000px;
 }
 
 .post-slider{
-    border: 1px solid #cb1c22;
+    position: relative;
+}
+
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    font-size: 2em;   
+    color:rgba(0, 0, 0, 0.5);
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    font-size: 2em;    
+    color:rgba(0, 0, 0, 0.5);
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.post-slider .slider-title{
+    margin: 30px auto;
+    text-align: center;
+    color: #333;  
 }
 
 .post-slider .post-wrapper{
-    border: 1px dashed #cb1c22;
     width: 84%;
-    height: 350px;
+    height: 400px;
     margin: 0px auto;
     overflow: hidden;
+    padding: 10px 0px 10px 0px;
 }
 
 .post-slider .post-wrapper .post{
-    background-color: blue;
+    background-color: rgba(242, 242, 242, 0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
     display: inline-block;
     margin: 0px 10px;
     width: 300px;
-    height: 350px;
+    height: 330px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-/*---media query for menu---*/
+.post:focus{
+    outline: none;
+}
 
+.post-slider .post-wrapper .post .post-info{
+    height: 80px;
+    padding: 0px 5px;
+}
+
+.post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.post-info h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+    padding-top: 10px;
+}
+
+.post-info i{
+    font-weight: lighter;
+    float: left;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    color: #555;
+
+}
+
+.user-date-container{
+    margin-left: 70px;
+}
+/*---media query for menu---*/
+@media only screen and (max-width: 1300px){
+    .post-info h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    .post-slider .post-wrapper .post{
+        backdrop-filter: blur(0px) !important;
+    }
+    
+    .post-info i{
+        font-weight: lighter;
+        padding-top: 10px;
+        font-size: 0.6rem;
+        margin-left: 10px;
+    }
+    .post-slider .next{
+        z-index: 998;
+        top: 50%; 
+        right: 10px !important;
+        font-size: 1.5rem !important;
+    }
+    
+    .post-slider .prev{
+        z-index: 998;
+        top: 50%;
+        left: 10px !important;
+        font-size: 1.5rem !important;
+    }
+}
 @media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
@@ -1010,6 +1108,33 @@ form a{
     }
     .map{
         display: none;
+    }
+    .post-info h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.0rem;
+        padding-top: 20px;
+        margin-top: 0;
+    }
+    .post-slider .post-wrapper .post{
+        backdrop-filter: blur(0px) !important;
+    }
+    
+    .post-info i{
+        color:rgba(242, 242, 242, 0.3)
+    }
+    .post-slider .next{
+        z-index: 998;
+        top: 50%; 
+        right: 10px !important;
+        font-size: 1.5rem !important;
+    }
+    
+    .post-slider .prev{
+        z-index: 998;
+        top: 50%;
+        left: 10px !important;
+        font-size: 1.5rem !important;
     }
 }
 
@@ -1071,5 +1196,41 @@ form a{
         width: 100%;
         box-sizing: border-box;
         padding-bottom: 20px;
+    }
+    
+    .post-slider .post-wrapper .post{
+        backdrop-filter: blur(0px) !important;
+    }
+
+    .post-info h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    
+    .post-info i{
+        font-weight: lighter;
+        padding-top: 10px;
+        font-size: 0.8rem;
+        margin-left: 10px;
+        color: #555 !important;
+    }
+    
+    .user-date-container{
+        margin-left: 30px;
+    }
+    
+    .post-slider .next{
+        z-index: 998;
+        top: 50%; 
+        right: 10px !important;
+        font-size: 1.8rem !important;
+    }
+    
+    .post-slider .prev{
+        z-index: 998;
+        top: 50%;
+        left: 10px !important;
+        font-size: 1.8rem !important;
     }
 }
