@@ -10,6 +10,44 @@ body{
     font-size: 130%;
 }
 
+body a:hover{
+    color: #cb1c22;
+    transition: color 0.3s;
+}
+
+body a:focus{
+    color: #563434;
+    outline: none;
+}
+
+#MenuItems .index-nav:hover{
+    background: #cb1c22;
+    color: #fff !important;
+    transition: color 0.3s;
+    border-radius: 5px;
+}
+
+#active-page{
+    background: #cb1c22;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+#singlePro-nav{
+    padding: 0 !important;
+}
+
+#footer-nav{
+    padding: 0 !important;
+}
+
+#footer-nav:focus{
+    color: #fff !important;
+}
+
+#category-nav{
+    padding: 0 !important;
+}
 /*---header CSS---*/
 #company-logo{
     width: 125px;
@@ -30,17 +68,17 @@ nav{
 nav ul{
     display: inline-block;
     list-style-type: none;
-
 }
 
 nav ul li{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 a{
     text-decoration: none;
     color: #000;
+    padding: 10px;
 }
 
 p{
@@ -91,7 +129,8 @@ p{
 }
 
 .btn:hover{
-   background: #563434 ;
+   background: #563434;
+   color: #fff !important;
 }
 
 .header{
@@ -198,6 +237,9 @@ p{
     opacity: 1;
 }
 
+.image_overlay a{
+    padding: 0 !important;
+}
 .image_overlay:hover > *{
     transform: translateY(0)
 }
@@ -439,9 +481,14 @@ small{
     margin: 100px auto 50px;
 }
 
+.row-2 h2{
+    font-weight: 800;
+}
 select{
     border: 1px solid #cb1c22;
     padding: 5px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.2rem;
 }
 
 select:focus{
@@ -875,6 +922,7 @@ form a{
     margin: 0px;
     padding: 0px;
     text-align: center;
+    font-weight: 800;
 }
 
 .c-heading p{
@@ -954,12 +1002,23 @@ form a{
     border: 2px solid #ffffff;  
 }
 /*---news/events css---*/
-.page-wrapper{
-    margin-bottom: 1000px;
+
+/* .page-wrapper{
+} */
+
+.page-wrapper a:hover{
+    color: #cb1c22;
+    transition: color 0.3s;
+}
+
+.page-wrapper a:focus{
+    color: #563434;
+    outline: none;
 }
 
 .post-slider{
     position: relative;
+    padding-top: 40px;
 }
 
 .post-slider .next{
@@ -972,6 +1031,11 @@ form a{
     cursor: pointer;
 }
 
+.post-slider .next:hover{
+    color: #cb1c22;
+    transition: color 0.3s;
+}
+
 .post-slider .prev{
     position: absolute;
     top: 50%;
@@ -982,10 +1046,17 @@ form a{
     cursor: pointer;
 }
 
+.post-slider .prev:hover{
+    color: #cb1c22;
+    transition: color 0.3s;
+}
+
 .post-slider .slider-title{
     margin: 30px auto;
     text-align: center;
     color: #333;  
+    font-size: 2.0rem;
+    font-weight: 800;
 }
 
 .post-slider .post-wrapper{
@@ -997,7 +1068,7 @@ form a{
 }
 
 .post-slider .post-wrapper .post{
-    background-color: rgba(242, 242, 242, 0.3);
+    background-color: rgba(242, 242, 242, 0.1);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     border-left: 1px solid rgba(255, 255, 255, 0.7);
@@ -1030,7 +1101,7 @@ form a{
 .post-info h4{
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #333;
     padding-top: 10px;
 }
@@ -1042,12 +1113,180 @@ form a{
     font-size: 0.8rem;
     margin-left: 10px;
     color: #555;
-
 }
 
 .user-date-container{
     margin-left: 70px;
 }
+
+.content{
+    width: 85%;
+    margin: 30px auto 30px;
+}
+
+.content .main-content{
+    width: 70%;
+    float: left;
+}
+
+.content .main-content .recent-post-title{
+    margin: 20px;
+    margin-top: 0px !important;
+    color: #333;
+    font-size: 2.0rem;
+    font-weight: 800;
+}
+
+.content .main-content .post{
+    width: 95%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: rgba(242, 242, 242, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+.content .main-content .post .read-more{
+   padding: .5rem 2rem !important;
+   margin: 0 !important;
+   border: 1px solid #cb1c22 !important;
+   background: transparent !important;
+   border-radius: 5px !important;
+   color: #cb1c22;  
+   border: 1px solid transparent;
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   font-weight: bold;
+}
+
+.content .main-content .post .read-more:hover{
+    background: #cb1c22 !important;
+    color: #fff !important;
+}
+
+.content .main-content .post .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-radius: 10px;
+}
+
+.content .main-content .post .post-preview{
+    padding: 10px;
+    width: 60%;
+    float: right;
+}
+
+.post-preview h2{
+    font-size: 1.5rem;
+}
+
+.post-preview i{
+    float: left;
+    padding-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    margin-left: 10px;
+}
+
+.post-preview p{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.content .sidebar{
+    width: 30%;
+    float: left;
+    height: 300px;
+}
+.content .sidebar h2{
+    font-weight: 800;
+    color: #333;
+}
+
+.content .sidebar .section{
+    background-color: rgba(242, 242, 242, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content .sidebar .section.search {
+    margin-top: 58px;
+}
+
+.search-input{
+    padding: .7rem 1rem;
+    display: block;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+    line-height: 1.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+    border: 1px solid #cb1c22;
+    font-size: 1.0em;
+    height: 110% !important;
+}
+
+.content .sidebar .section.topics ul{
+    margin: 0px !important;
+    padding: 0px !important;
+    list-style: none;
+}
+
+.content .sidebar .section.topics ul li a{
+    padding-top: 15px !important;
+    padding-right: 0 !important;
+    padding-bottom: 15px !important;
+    padding-left: 0 !important;
+    display: block;
+    border-bottom: 1px solid #cb1c22;
+    transition: all 0.3s;
+}
+
+.section-title-topics{
+    padding-bottom: 10px;
+}
+
+.content .sidebar .section.topics ul li a:hover{
+    padding-left: 10px !important;
+    transition: all 0.3s;
+}
+
+#news_page-selector{
+    padding-left: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---media query for menu---*/
 @media only screen and (max-width: 1300px){
     .post-info h4{
@@ -1098,6 +1337,9 @@ form a{
     }
     nav ul li a{
         color: #fff;
+        padding: 0 !important;
+        background: none;
+        border-radius: 0 !important;
     }
     .menu-icon{
         display: block;
@@ -1137,7 +1379,18 @@ form a{
         font-size: 1.5rem !important;
     }
 }
-
+@media only screen and (max-width: 626px){
+    .post-info i{
+        color:rgba(242, 242, 242, 0.3)
+    }
+    .post-info h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.9rem;
+        padding-top: 20px;
+        margin-top: 0;
+    }
+}
 /*---media query for less than 600 screen size---*/
 @media only screen and (max-width: 600px){
     body{
@@ -1205,7 +1458,8 @@ form a{
     .post-info h4{
         text-align: center;
         font-weight: bold;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        padding-top: 0px !important;
     }
     
     .post-info i{
@@ -1232,5 +1486,8 @@ form a{
         top: 50%;
         left: 10px !important;
         font-size: 1.8rem !important;
+    }
+    #news_page-selector{
+        padding-left: 0px !important;
     }
 }

@@ -40,7 +40,7 @@
 //     }   
 // });
 
-//Slick Carousel
+//Slick Carousel in news-events.html
 $(document).ready(function(){
     $('.post-wrapper').slick({
         slidesToShow: 3,
