@@ -1067,13 +1067,19 @@ form a{
     padding: 10px 0px 10px 0px;
 }
 
-.post-slider .post-wrapper .post{
-    background-color: rgba(242, 242, 242, 0.1);
+.postcard-background{
+    background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-    border-left: 1px solid rgba(255, 255, 255, 0.7);
-    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+    border-radius: 10px;
+    width: 100%;
+    height: 330px;
+}
+
+.post-slider .post-wrapper .post{
+    background: radial-gradient(#fff, #cb1c22);
     display: inline-block;
     margin: 0px 10px;
     width: 300px;
@@ -1106,13 +1112,19 @@ form a{
     padding-top: 10px;
 }
 
+.post-info h4 a:hover{
+    color:#ffffff !important;
+    border: none !important;
+    background-color: none !important;
+}
+
 .post-info i{
     font-weight: lighter;
     float: left;
     padding-top: 10px;
     font-size: 0.8rem;
     margin-left: 10px;
-    color: #555;
+    color: #333;
 }
 
 .user-date-container{
@@ -1127,6 +1139,20 @@ form a{
 .content .main-content{
     width: 70%;
     float: left;
+}
+
+.content .main-content.single{
+    background-color: #f7f7f7;
+    padding: 20px 50px;
+    font: 1.1rem;
+    border-radius: 5px;
+}
+
+.content .main-content.single .post-title{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 800;
+    font-size: 2.1rem;
 }
 
 .content .main-content .recent-post-title{
@@ -1149,6 +1175,30 @@ form a{
     border-right: 1px solid rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(5px);
     position: relative;
+}
+
+.content .otherPosts .post{
+    border-top: 1px solid #cb1c22;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.content .otherPosts .post img{
+    height: 60px;
+    width: 75px;
+    float: left;
+    margin-right: 10px; 
+}
+
+.content .otherPosts .post .otherPosts-title{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 800;
+    padding: 0 !important;
+}
+.content .otherPosts .post .otherPosts-title:hover{
+    color: #cb1c22 !important;  
 }
 
 .content .main-content .post .read-more{
@@ -1212,6 +1262,21 @@ form a{
     float: left;
     height: 300px;
 }
+
+.content .sidebar.single{
+    padding: 0px 10px;
+}
+
+.content .sidebar .section.single{
+    background-color: #f7f7f7 !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    backdrop-filter: none !important;
+    border-radius: 5px !important;
+}
+
 .content .sidebar h2{
     font-weight: 800;
     color: #333;
@@ -1275,7 +1340,9 @@ form a{
     padding-left: 500px;
 }
 
-
+.slick-arrow.slick-disabled {
+    display: none !important;
+}
 
 
 
