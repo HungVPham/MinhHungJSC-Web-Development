@@ -1344,7 +1344,9 @@ form a{
     display: none !important;
 }
 
-
+.sliderpost-nav{
+    padding: 0 !important;
+}
 
 
 
