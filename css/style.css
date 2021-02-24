@@ -1009,6 +1009,10 @@ form a{
     position: relative;
 }
 
+.page-wrapper.single{
+    padding-bottom: 0px !important;
+}
+
 .footer.news{
     position: absolute;
     bottom: 0;
