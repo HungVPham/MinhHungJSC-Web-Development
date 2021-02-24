@@ -324,6 +324,7 @@ small{
 }
 
 /*---news and events CSS---*/
+
 .stories{
     padding-top: 100px;
 }
@@ -1001,10 +1002,18 @@ form a{
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
     border: 2px solid #ffffff;  
 }
-/*---news/events css---*/
+/*---news/events page css---*/
 
-/* .page-wrapper{
-} */
+.page-wrapper{
+    padding-bottom: 500px;
+    position: relative;
+}
+
+.footer.news{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 .page-wrapper a:hover{
     color: #cb1c22;
@@ -1139,6 +1148,7 @@ form a{
 .content .main-content{
     width: 70%;
     float: left;
+    position: relative;
 }
 
 .content .main-content.single{
@@ -1337,7 +1347,9 @@ form a{
 }
 
 #news_page-selector{
-    padding-left: 500px;
+    right: 0;
+    position: absolute;
+    padding-right: 3%;
 }
 
 .slick-arrow.slick-disabled {
