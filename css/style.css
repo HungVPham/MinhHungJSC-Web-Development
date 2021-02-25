@@ -106,8 +106,7 @@ p{
 
 .header .col-2 img{
     max-width: 100%;
-    padding: 50px 0;
-    opacity: 0.8;
+    padding-bottom: 50px;
 }
 
 .col-2 h1{
@@ -115,7 +114,6 @@ p{
     line-height: 60px;
     margin: 25px 0px;
     text-transform: uppercase;
-
 }
 
 .btn{
@@ -137,11 +135,26 @@ p{
     background: radial-gradient(#fff, #cb1c22);
 }
 
-.header .row{
-    margin-top: 70px;
-
+#company-subtitle{
+    text-align: center;
+    color: #333;
 }
 
+#company-title{
+    text-align: center;
+    color: #cb1c22;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+#company-mantra{
+    text-align: center;
+    color: #333;
+}
+
+#homebtn{
+    margin-left: 35%;
+}
 @font-face {
     font-family: 'font1';
     src: url("fonts/arialRoundedMTStdExtrabold.otf") format("opentype");
@@ -1683,6 +1696,15 @@ form a{
     .footer.news{
         position: absolute;
         bottom: 0 !important;
+    }
+    #homebtn{
+        margin-left: 0 !important;
+    }
+    .col-2 img{
+        display: none;
+    }
+    #company-title{
+        color: #333 !important;
     }
 }
 
