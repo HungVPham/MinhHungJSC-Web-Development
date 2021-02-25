@@ -1706,6 +1706,14 @@ form a{
         margin-top: 5px;
         border: none !important;
     }
+    .content .main-content .post .read-more:hover{
+        background: none !important;
+        color: #563434 !important;
+    }
+    .content .main-content .post .read-more:focus{
+        background: none !important;
+        color: #563434 !important;
+    }
     .content .sidebar{
         margin-top: 30px;
     }
