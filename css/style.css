@@ -1132,7 +1132,6 @@ form a{
 }
 
 .post-info i{
-    font-weight: lighter;
     float: left;
     padding-top: 10px;
     font-size: 0.8rem;
@@ -1430,7 +1429,6 @@ form a{
     }
     
     .post-info i{
-        font-weight: lighter;
         padding-top: 10px;
         font-size: 0.6rem;
         margin-left: 10px;
@@ -1452,9 +1450,9 @@ form a{
         padding: 0px !important;
     }
 }
-@media only screen and (max-width: 1119px){
+@media only screen and (max-width: 1120px){
     .post-info i{
-        color: #555;
+        color: #333;
         margin-left: 10px !important;
     }
     .post-info h4{
@@ -1526,7 +1524,7 @@ form a{
     }
     
     .post-info i{
-        color: #555;
+        color: #333;
         margin-left: 10px !important;
     }
     .post-slider .next{
@@ -1566,7 +1564,7 @@ form a{
 
 @media only screen and (max-width: 683px){
     .post-info i{
-        color: #555;
+        color: #333;
         margin-left: 10px !important;
     }
     .post-info h4{
@@ -1650,11 +1648,10 @@ form a{
     }
     
     .post-info i{
-        font-weight: lighter;
         padding-top: 10px;
         font-size: 0.8rem;
         margin-left: 10px;
-        color: #555 !important;
+        color: #333 !important;
     }
     
     .user-date-container{
@@ -1721,6 +1718,9 @@ form a{
     }
     .post-preview h2{
         text-align: center;
+    }
+    .user-date-container{
+        font-size: 1.0rem;
     }
 }
 
