@@ -37,6 +37,18 @@ body a:focus{
     padding: 0 !important;
 }
 
+#singlePro-nav h4:hover{
+    color: #cb1c22;
+}
+
+#products-nav{
+    padding: 0 !important;
+}
+
+#products-nav p:hover{
+    color: #cb1c22;
+}
+
 #footer-nav{
     padding: 0 !important;
 }
@@ -534,8 +546,7 @@ select:focus{
 
 /*---single product details---*/
 .single-product{
-    margin-top: 80px;
-
+    margin-top: 30px;
 }
 
 .single-product .col-2 img{
@@ -1566,6 +1577,7 @@ form a{
         width: 100%;
         margin-top: 20px;
         padding: 10px;
+        padding-top: 50px;
     }
     .content .main-content .post{
         width: 100%;
@@ -1700,11 +1712,14 @@ form a{
     #homebtn{
         margin-left: 0 !important;
     }
-    .col-2 img{
+    .col-2.index img{
         display: none;
     }
     #company-title{
         color: #333 !important;
+    }
+    .container .row{
+        padding-top: 50px;
     }
 }
 
