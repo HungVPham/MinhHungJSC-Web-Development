@@ -227,18 +227,34 @@ p{
     cursor: pointer;
 }
 
+#section{
+    flex-basis: 25% !important;
+    min-width: 200px !important;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+    padding: 10px !important;
+    margin: none !important;
+}
+
+#section-container{
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .col-3 img{
     width: 100%;
     display: block;
-
 }
 
 .image_overlay{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 94%;
+    height: 95%;
     background: rgba(202, 28, 33, 0.6);
     color: #fff;
     display: flex;
@@ -247,10 +263,11 @@ p{
     justify-content: center;
     opacity: 0;
     transition: opacity 0.25s;
+    margin: 10px !important;
 }
 
 .image_overlay-blur{
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(0.5px);
 }
 
 .image_overlay > *{
@@ -499,6 +516,18 @@ small{
 
 .footer a{
     color: #b5b5b5;
+}
+
+#slider-user-nav:hover{
+    color: #f7f7f7 !important;
+}
+
+#content-user-nav:hover{
+    color: #cb1c22 !important;
+}
+
+#single-user-nav:hover{
+    color: #563434 !important;
 }
 
 /*---all products page---*/
@@ -1097,7 +1126,7 @@ form a{
 }
 
 .post-slider .post-wrapper{
-    width: 84%;
+    width: 1300px;
     height: 400px;
     margin: 0px auto;
     overflow: hidden;
@@ -1132,6 +1161,7 @@ form a{
 .post-slider .post-wrapper .post .post-info{
     height: 80px;
     padding: 0px 5px;
+    position: relative;
 }
 
 .post-slider .post-wrapper .post .slider-image{
@@ -1150,7 +1180,7 @@ form a{
 }
 
 .post-info h4 a:hover{
-    color:#ffffff !important;
+    color: #f2f2f2 !important;
     border: none !important;
     background-color: none !important;
 }
@@ -1164,11 +1194,13 @@ form a{
 }
 
 .user-date-container{
-    margin-left: 18%;
+    position: absolute;
+    width: 100%;
+    left: 18%  !important;
 }
 
 .content{
-    width: 85%;
+    width: 1300px;
     margin: 30px auto 30px;
 }
 
@@ -1441,6 +1473,13 @@ form a{
         width: 100%;
         margin-left: 0 !important;
     }
+    .content{
+        width: 83%;
+    }
+    .post-slider .post-wrapper{
+        width: 83%;
+    }
+
 }
 @media only screen and (max-width: 1300px){
     .post-info h4{
@@ -1492,15 +1531,42 @@ form a{
     .post-preview i{
         font-size: 0.9rem;
     }
+    .user-date-container{
+        left: 18% !important;
+    }
+    .post-info h4{
+        font-size: 1.2rem;
+    }
+    .post-info i{
+        font-size: 0.7rem;
+    }
 }
 @media only screen and (max-width: 934px){
     .content{
         width: 100%;
     }
+    .user-date-container{
+        left: 18% !important;
+    }
+    .post-info h4{
+        font-size: 1.2rem;
+    }
+    .post-info i{
+        font-size: 0.7rem;
+    }
 }
 @media only screen and (max-width: 888px){
     .post-preview i{
         font-size: 0.8rem;
+    }
+    .user-date-container{
+        left: 18% !important;
+    }
+    .post-info h4{
+        font-size: 1.2rem;
+    }
+    .post-info i{
+        font-size: 0.7rem;
     }
 }
 @media only screen and (max-width: 800px){
@@ -1549,8 +1615,8 @@ form a{
     
     .post-info i{
         color: #333;
-        margin-left: 10px !important;
     }
+
     .post-slider .next{
         z-index: 998;
         top: 50%; 
@@ -1563,6 +1629,9 @@ form a{
         top: 50%;
         left: 10px !important;
         font-size: 1.5rem !important;
+    }
+    .user-date-container{
+        left: 15% !important;
     }
 }
 
@@ -1585,6 +1654,12 @@ form a{
     .content .main-content.single{
         padding: 20px;
     }
+    .post-info h4{
+        font-size: 0.9rem;
+    }
+    .user-date-container{
+        left: 14% !important;
+    }
 }
 
 @media only screen and (max-width: 683px){
@@ -1598,6 +1673,9 @@ form a{
         font-size: 0.9rem;
         padding-top: 20px;
         margin-top: 0;
+    }
+    .user-date-container{
+        left: 14% !important;
     }
 }
 
@@ -1624,7 +1702,28 @@ form a{
     }
     .image_overlay{
         opacity: 1;
+        width: 100%;
+        height: 93%;
+        margin-top: none !important;
     }
+    #section{
+        flex-basis: 30% !important;
+        min-width: 250px !important;
+        margin-bottom: 30px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    #section-container{
+        max-width: 1080px !important;
+        margin: auto;
+    }
+
+    .col-3 img{
+        width: 109%;
+        display: block;
+    }
+    
     .cart-info p{
         display: none;
     }
@@ -1679,10 +1778,6 @@ form a{
         color: #333 !important;
     }
     
-    .user-date-container{
-        margin-left: 30px;
-    }
-    
     .post-slider .next{
         z-index: 998;
         top: 50%; 
@@ -1720,6 +1815,9 @@ form a{
     }
     .container .row{
         padding-top: 50px;
+    }
+    .user-date-container{
+        left: 22% !important;
     }
 }
 
@@ -1765,13 +1863,19 @@ form a{
         text-align: center;
     }
     .user-date-container{
-        font-size: 1.0rem;
+        left: 18% !important;
+    }
+    .post-info h4{
+        font-size: 1.2rem;
+    }
+    .post-info i{
+        font-size: 0.8rem;
     }
 }
 
 @media only screen and (max-width: 281px){
     .post-info h4{
-        font-size: 0.8rem;
+        font-size: 1.0rem;
     }
     
     .post-info i{
@@ -1779,8 +1883,9 @@ form a{
     }
 
     .user-date-container{
-        margin-left: 10px;
+        left: 0  !important;
     }
+    
     .post-preview i{
         font-size: 0.7rem;
     }
