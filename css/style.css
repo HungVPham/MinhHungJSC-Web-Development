@@ -1089,8 +1089,8 @@ form a{
 
 .post-slider .next{
     position: absolute;
-    top: 50%;
-    right: 80px;
+    top: 40%;
+    right: 20px;
     font-size: 2em;   
     color:rgba(0, 0, 0, 0.5);
     opacity: 70%;
@@ -1104,8 +1104,8 @@ form a{
 
 .post-slider .prev{
     position: absolute;
-    top: 50%;
-    left: 80px;
+    top: 40%;
+    left: 20px;
     font-size: 2em;    
     color:rgba(0, 0, 0, 0.5);
     opacity: 80%;
@@ -1479,6 +1479,10 @@ form a{
     .post-slider .post-wrapper{
         width: 83%;
     }
+    .slider-nav-container{
+        width: 100% !important;
+        margin: none !important;
+    }
 
 }
 @media only screen and (max-width: 1300px){
@@ -1767,7 +1771,7 @@ form a{
     .post-info h4{
         text-align: center;
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding-top: 0px !important;
     }
     
@@ -1873,6 +1877,23 @@ form a{
     }
 }
 
+@media only screen and (max-width: 400px){
+    .post-info h4{
+        font-size: 1.0rem;
+    }
+    
+    .post-info i{
+        font-size: 0.6rem;
+    }
+
+    .user-date-container{
+        left: 15%  !important;
+    }
+    
+    .post-preview i{
+        font-size: 0.7rem;
+    }
+}
 @media only screen and (max-width: 281px){
     .post-info h4{
         font-size: 1.0rem;
