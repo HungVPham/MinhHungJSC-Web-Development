@@ -1502,16 +1502,16 @@ form a{
     }
     .post-slider .next{
         z-index: 998;
-        top: 50%; 
+        top: 40%; 
         right: 10px !important;
-        font-size: 1.5rem !important;
+       
     }
     
     .post-slider .prev{
         z-index: 998;
-        top: 50%;
+        top: 40%;
         left: 10px !important;
-        font-size: 1.5rem !important;
+       
     }
     .post-preview a{
         padding: 0px !important;
@@ -1623,16 +1623,12 @@ form a{
 
     .post-slider .next{
         z-index: 998;
-        top: 50%; 
-        right: 10px !important;
-        font-size: 1.5rem !important;
+        top: 40%; 
     }
     
     .post-slider .prev{
         z-index: 998;
-        top: 50%;
-        left: 10px !important;
-        font-size: 1.5rem !important;
+        top: 40%;
     }
     .user-date-container{
         left: 15% !important;
@@ -1784,14 +1780,14 @@ form a{
     
     .post-slider .next{
         z-index: 998;
-        top: 50%; 
+        top: 40%; 
         right: 10px !important;
         font-size: 1.8rem !important;
     }
     
     .post-slider .prev{
         z-index: 998;
-        top: 50%;
+        top: 40%;
         left: 10px !important;
         font-size: 1.8rem !important;
     }
