@@ -504,7 +504,7 @@ small{
     margin: 20px 0;
 }
 
-.copyright{
+#copyright{
     text-align: center;
 }
 
@@ -1888,6 +1888,9 @@ form a{
     
     .post-preview i{
         font-size: 0.7rem;
+    }
+    .copyright{
+        font-size: 13px;
     }
 }
 @media only screen and (max-width: 281px){
